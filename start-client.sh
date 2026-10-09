@@ -1,0 +1,2 @@
+#!/bin/sh
+OPENHANDS_SUPPRESS_BANNER=1 LOG_LEVEL=ERROR uv run platypus

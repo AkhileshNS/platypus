@@ -5,8 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "openhands-agent-server>=1.53.0",
     "openhands-sdk>=1.53.0",
     "openhands-tools>=1.53.0",
+    "openhands-workspace>=1.53.0",
 ]
 
 [project.scripts]
@@ -15,3 +17,8 @@ platypus = "platypus:main"
 [build-system]
 requires = ["uv_build>=0.12.23,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.16.10",
+]
